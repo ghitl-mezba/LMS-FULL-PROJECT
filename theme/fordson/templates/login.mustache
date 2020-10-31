@@ -1,0 +1,28 @@
+
+{{> theme_fordson/fronttemplate/head }}
+
+{{> theme_fordson/fronttemplate/header }}
+<hr/>
+{{{ output.main_content }}}
+{{> theme_fordson/fronttemplate/footer }}
+
+
+
+<link href="{{theme_url}}/templates/front/css/style.css" rel="stylesheet" type="text/css">
+<script src="{{theme_url}}/templates/front/js/custom.js"></script>
+
+<style>
+	.tp-caption.boxshadow, .boxshadow{
+		box-shadow: none !Important;
+	}
+	.card{padding-bottom:0px;margin-bottom: 70px;min-height:auto;}
+	.card-header{margin-top:0px;padding:0px;font-size:30px !Important;}
+	.rememberpass{text-align:left !Important;} 
+	.rememberpass label{margin-bottom:0px;} 
+	.forgetpass{text-align:left !Important;font-weight:bold;} 
+</style>
+
+<script>
+ $(".card-header").text("Login with your account");
+ $('.mt-3:contains("Cookies must be enabled in your browser")').css('text-align','left');
+</script>

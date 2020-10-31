@@ -1,0 +1,56 @@
+ {{> theme_fordson/fronttemplate/head }}
+
+
+<body class="">
+<div id="wrapper" class="clearfix">
+  {{> theme_fordson/fronttemplate/loader }}
+  {{> theme_fordson/fronttemplate/header }}
+	
+  <div class="main-content">
+   
+	
+	<!--Top Section-->
+  {{{show_heading}}}
+
+
+    <section id="about">
+      <div class="container">
+        <div class="section-content">
+          {{{show_what_we_do1}}}
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container pb-40">
+        <div class="row multi-row-clearfix">
+          <div class="col-md-12">
+            <div class="owl-carousel-3col">
+              {{{show_what_we_do2}}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+	  {{> theme_fordson/fronttemplate/apply_footer }}
+
+  </div>
+  
+	 {{> theme_fordson/fronttemplate/footer }}
+</div>
+</body>
+</html>
+<link href="{{theme_url}}/templates/front/css/style.css" rel="stylesheet" type="text/css">
+
+<!-- Footer Scripts --> 
+<script src="{{theme_url}}/templates/front/js/custom.js"></script>
+
+  <style>
+ 	.tp-caption.boxshadow, .boxshadow{
+		box-shadow: none !Important;
+	}
+ </style>
+{{#js}}
+require(['theme_boost/loader']);
+{{/js}}

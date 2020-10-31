@@ -1,0 +1,127 @@
+ {{> theme_fordson/fronttemplate/head }}
+
+<body class="">
+<div id="wrapper" class="clearfix">
+  {{> theme_fordson/fronttemplate/loader }}
+  {{> theme_fordson/fronttemplate/header }}
+ 
+  
+  <div class="main-content">
+   
+	
+	<!--Top Section-->
+{{{show_heading}}}
+    
+
+
+      <section class="divider">
+        <div class="container">
+          <div class="row pt-30">
+            <div class="col-md-6">
+
+            
+              <h3 class="mt-0 mb-30">{{show_msg}}</h3>
+              <h3 class="line-bottom mt-0 mb-30">Interested in discussing?</h3>
+
+              <!-- Contact Form -->
+              <form id="contact_form" name="contact_form" class="" action="contact.php" method="post">
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Name <small>*</small></label>
+                      <input name="form_name" class="form-control" type="text" placeholder="Enter Name" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Email <small>*</small></label>
+                      <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Subject <small>*</small></label>
+                      <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label>Phone</label>
+                      <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="form-group">
+                  <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                  <button type="submit" name="submitContact" class="btn btn-dark btn-theme-colored btn-flat mr-5" >Send your message</button>
+                  <button type="reset" class="btn btn-default btn-flat btn-theme-colored">Reset</button>
+                </div>
+              </form>
+
+              <!-- Contact Form Validation-->
+
+            </div>
+            <div class="col-md-6">
+              <h3 class="line-bottom mt-0">Get in touch with us</h3>
+              <p>Aliquam officia dolor rerum enim doloremque iusto eos atque tempora dignissimos similique, quae, maxime sit accusantium delectus.</p>
+              <ul class="styled-icons icon-dark mt-20">
+                <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="10"><a href="{{output.facebook_footer}}" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
+                <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" data-wow-offset="10"><a href="{{output.twitter_footer}}" data-bg-color="#02B0E8"><i class="fa fa-twitter"></i></a></li>
+                <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".3s" data-wow-offset="10"><a href="{{output.skype_footer}}" data-bg-color="#05A7E3"><i class="fa fa-skype"></i></a></li>
+                <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s" data-wow-offset="10"><a href="{{output.google_plus}}" data-bg-color="#A11312"><i class="fa fa-google-plus"></i></a></li>
+                <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10"><a href="{{output.youtube_channel}}" data-bg-color="#C22E2A"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+
+              <div class="icon-box media mb-0 pb-0"> <a class="media-left pull-left flip mr-20" href="#"> <i class="pe-7s-map-2 text-theme-colored"></i></a>
+                <div class="media-body">
+                  <h5 class="mt-0">Our Office Location</h5>
+                  <p>{{ output.office_address }}</p>
+                </div>
+              </div>
+              <div class="icon-box media mb-0 pb-0 pt-0 mt-0"> <a class="media-left pull-left flip mr-15" href="#"> <i class="pe-7s-call text-theme-colored"></i></a>
+                <div class="media-body">
+                  <h5 class="mt-0">Contact Number</h5>
+                  <p><a href="#">{{output.brandphone_footer}}</a></p>
+                </div>
+              </div>
+              <div class="icon-box media mb-0 pb-0 pt-0 mt-0"> <a class="media-left pull-left flip mr-15" href="#"> <i class="pe-7s-mail text-theme-colored"></i></a>
+                <div class="media-body">
+                  <h5 class="mt-0">Email Address</h5>
+                  <p><a href="mailto:supporte@yourdomin.com">{{output.brandemail_footer}}</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    {{> theme_fordson/fronttemplate/apply_footer }}
+
+  </div>
+  
+	{{> theme_fordson/fronttemplate/footer }}
+</div>
+</body>
+</html>
+<link href="{{theme_url}}/templates/front/css/style.css" rel="stylesheet" type="text/css">
+
+<!-- Footer Scripts --> 
+<script src="{{theme_url}}/templates/front/js/custom.js"></script>
+
+ <style>
+ 	.tp-caption.boxshadow, .boxshadow{
+		box-shadow: none !Important;
+	}
+ </style>
+{{#js}}
+require(['theme_boost/loader']);
+{{/js}}

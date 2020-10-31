@@ -1,0 +1,38 @@
+ {{> theme_fordson/fronttemplate/head }}
+
+<body class="">
+<div id="wrapper" class="clearfix">
+  {{> theme_fordson/fronttemplate/loader }}
+  {{> theme_fordson/fronttemplate/header }}
+ 
+  
+  <div class="main-content">
+   
+	
+	<!--Top Section-->
+{{{show_heading}}}
+
+
+      <div class="container help_main_div">
+            <div class="row">
+                {{{show_help_desk}}}
+            </div>
+           
+        </div>
+
+    {{> theme_fordson/fronttemplate/apply_footer }}
+
+  </div>
+  
+	{{> theme_fordson/fronttemplate/footer }}
+</div>
+</body>
+</html>
+<link href="{{theme_url}}/templates/front/css/style.css" rel="stylesheet" type="text/css">
+
+<!-- Footer Scripts --> 
+<script src="{{theme_url}}/templates/front/js/custom.js"></script>
+ 
+{{#js}}
+require(['theme_boost/loader']);
+{{/js}}

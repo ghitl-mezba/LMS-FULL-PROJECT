@@ -1,0 +1,118 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page footer.
+}}
+
+<footer id="footer" class="footer bg-black-222" data-bg-img="{{theme_url}}/templates/front/images/footer-bg.png">
+    <div class="container pt-70 pb-40">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <img class="mt-10 mb-15" style="width: 80px;" alt="Logo" src="http://elearner.ghitbd.com/ghitl/images/GHITL%20Logo%20Transparent%202%20brighter.png">
+            <p class="font-16 mb-10 text-white">{{{output.footnote}}}</p>
+            <a class="font-14 text-white" href="#"><i class="fa fa-angle-double-right"></i> Read more</a>
+            <ul class="styled-icons icon-dark mt-20">
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".1s" data-wow-offset="10"><a href="{{output.facebook_footer}}" target="_blank" data-bg-color="#3B5998"><i class="fa fa-facebook"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".2s" data-wow-offset="10"><a href="{{output.twitter_footer}}" target="_blank" data-bg-color="#02B0E8"><i class="fa fa-twitter"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".3s" data-wow-offset="10"><a href="{{output.skype_footer}}" target="_blank" data-bg-color="#05A7E3"><i class="fa fa-skype"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s" data-wow-offset="10"><a href="{{output.google_plus}}" target="_blank" data-bg-color="#A11312"><i class="fa fa-google-plus"></i></a></li>
+              <li class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10"><a href="{{output.youtube_channel}}" target="_blank" data-bg-color="#C22E2A"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+       
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title line-bottom">Group Of Companies</h5>
+            <ul class="list angle-double-right list-border">
+              <li><a href="#">Golden Harvest Ice-Cream Ltd.</a></li>
+              <li><a href="#">Golden Harvest Commodities Ltd.</a></li>
+              <li><a href="#">Brain Train Studio Ltd.</a></li>
+              <li><a href="#">Golden Harvest Foods Ltd.</a></li>
+              <li><a href="#">Golden Harvest Industrial Park</a></li>
+            </ul>
+          </div>
+        </div>        
+		
+		<div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title line-bottom">Group Of Companies</h5>
+            <ul class="list angle-double-right list-border">
+              <li><a href="#">Nippon Express Bangladesh Ltd.</a></li>
+              <li><a href="#">Golden Harvest Developers Ltd.</a></li>
+              <li><a href="#">Sonali Life Insurance Com. Ltd.</a></li>
+              <li><a href="#">Golden Harvest Cold Chain Network</a></li>
+              <li><a href="#">Partex Aviation Ltd</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h5 class="widget-title line-bottom">Quick Contact</h5>
+            <ul class="list-border">
+              <li><a href="#">{{output.brandphone_footer}}</a></li>
+              <li><a href="#">{{output.brandemail_footer}}</a></li>
+              <li><a href="#" class="lineheight-20"> {{ output.office_address }}</a></li>
+            </ul>
+            <p class="font-16 text-white mb-5 mt-15">Subscribe to our newsletter</p>
+            <form id="footer-mailchimp-subscription-form" class="newsletter-form mt-10">
+              <label class="display-block" for="mce-EMAIL"></label>
+              <div class="input-group">
+                <input type="email" value="" name="EMAIL" placeholder="Your Email"  class="form-control" data-height="37px" id="mce-EMAIL">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-colored btn-theme-colored m-0" style="border: 1.5px solid;border-radius:0px;"><i class="fa fa-paper-plane-o text-white"></i></button>
+                </span>
+              </div>
+            </form>
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom bg-black-333">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="font-11 text-black-777 m-0">Copyright &copy;2020 Golden Harvest InfoTech Ltd. All Rights Reserved.</p>
+          </div>  
+		  <div class="col-md-4">
+            <p class="font-11 text-black-777 m-0 text-center">Powerd By <a href="https://moodle.org/" style="font-weight: bold;">moodle</a></p>
+          </div>
+          <div class="col-md-4 text-right">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5 font-12" style="margin-top:0px !important;">
+                
+				<li>
+                  <a href="{{theme_url}}/layout/faqpage.php">FAQ</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="{{theme_url}}/layout/help_desk.php">Help Desk</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="{{theme_url}}/layout/support.php">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

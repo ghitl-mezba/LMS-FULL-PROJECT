@@ -1,0 +1,93 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page header.
+}}
+
+<header id="header" class="header">
+  <div class="header-top bg-theme-color-2 sm-text-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="widget no-border m-0">
+            <ul class="list-inline">
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a class="text-white" href="#">{{output.brandphone_footer}}</a> </li>
+              <li class="text-white m-0 pl-10 pr-10"> <i class="fa fa-clock-o text-white"></i> {{ output.office_time }}</li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-white"></i> <a class="text-white" href="#">{{output.brandemail_footer}}</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget no-border m-0">
+            <ul class="list-inline text-right sm-text-center">
+              <li>
+                <a href="{{theme_url}}/layout/faqpage.php" class="text-white">FAQ</a>
+              </li>
+              <li class="text-white">|</li>
+              <li>
+                <a href="{{theme_url}}/layout/help_desk.php" class="text-white">Help Desk</a>
+              </li>
+              <li class="text-white">|</li>
+              <li>
+                <a href="{{theme_url}}/layout/support.php" class="text-white">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+      <div class="container-fluid">
+        <nav id="menuzord-right" class="menuzord default">
+          <a class="menuzord-brand pull-left flip" href="https://elearner.ghitbd.com/lms/" style="margin-top:10px;">
+            <img src="{{theme_url}}/templates/front/images/logo-wide.png" alt="Logo">
+            <span style="color: #199019;text-shadow: 0px 0px 1px #d5d816;font-size: 18px;">{{ output.tag_line }}</span>
+          </a>
+          <ul class="menuzord-menu">
+           <li><a href="https://elearner.ghitbd.com/lms/">HOME</a></li>
+           <li><a href="{{theme_url}}/layout/who_we_are.php">WHO WE ARE</a></li>
+            <li><a href="{{theme_url}}/layout/what_we_do.php">WHAT WE DO</a></li>
+            <li><a href="{{theme_url}}/layout/work_with_us.php">WORK WITH US</a></li>
+            <li><a href="{{theme_url}}/layout/contact.php">CONTACT</a></li>
+            <li><a href="{{root_url}}/login/signup.php" class="btn btn-success" style="margin-left: 10px;margin-right: 10px;color: #fff !important;border-radius:0px;"><i class="fa fa-edit"></i> REGISTER</a></li>
+            <li><a href="{{root_url}}/login/index.php" class="btn btn-dark" style="color: #fff !important;border-radius:0px;"><i class="fa fa-sign-in"></i> LOGIN</a></li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+.container-fluid{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+</style>
+  <script>
+   $(function($) {
+     var path = window.location.href; 
+     $('ul li a').each(function() {
+      if (this.href === path) {
+       $(this).parent().addClass('active');
+      }
+     });
+    });
+  </script>

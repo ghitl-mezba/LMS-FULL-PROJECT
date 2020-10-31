@@ -1,0 +1,72 @@
+ {{> theme_fordson/fronttemplate/head }}
+
+<body class="">
+<div id="wrapper" class="clearfix">
+  {{> theme_fordson/fronttemplate/loader }}
+  {{> theme_fordson/fronttemplate/header }}
+ 
+  
+  <div class="main-content">
+   
+	
+	<!--Top Section-->
+{{{show_heading}}}
+
+
+
+
+    <div class="main-content">
+        <!--Top Section-->
+        <section id="home" class="divider bg-lighter">
+            <div class="display-table">
+                <div class="display-table-cell">
+                        <div class="container">
+                            <div class="row">
+                                {{{show_support}}}
+                                <div class="col-md-6 col-md-push-3">
+                                
+                                    <div class="widget bg-lightest border-1px p-30">
+                                        <div class="widget border-1px p-30">
+                                            <h3 class="mt-0 mb-30">{{show_msg}}</h3>
+                                            <h5 class="widget-title line-bottom">Email us for the support you need</h5>
+                                            <form id="quick_contact_form" name="quick_contact_form" class="quick-contact-form white" action="support.php" method="post">
+                                                <div class="form-group">
+                                                    <input name="form_email" class="form-control" type="text" required="" placeholder="Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input name="form_subject" class="form-control" type="text" required="" placeholder="Subject">
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="form_message" class="form-control" required="" placeholder="Message" rows="3"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                                                    <button type="submit" name="submitSupport" class="btn btn-dark btn-theme-colored btn-sm mt-0" data-loading-text="Please wait...">Send Message</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+    {{> theme_fordson/fronttemplate/apply_footer }}
+
+  </div>
+  
+	{{> theme_fordson/fronttemplate/footer }}
+</div>
+</body>
+</html>
+<link href="{{theme_url}}/templates/front/css/style.css" rel="stylesheet" type="text/css">
+
+<!-- Footer Scripts --> 
+<script src="{{theme_url}}/templates/front/js/custom.js"></script>
+ 
+{{#js}}
+require(['theme_boost/loader']);
+{{/js}}
